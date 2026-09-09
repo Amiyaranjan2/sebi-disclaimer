@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SEBI Registered Principal Entity Disclosure | Amiya Ranjan Kumar</title>
+
+    <meta name="description"
+          content="SEBI Registered Principal Entity Disclosure for Amiya Ranjan Kumar, AMFI Registered Mutual Fund Distributor – ARN 106678.">
+
+    <style>
+        :root {
+            --navy: #08265f;
+            --navy-dark: #061d4b;
+            --teal: #078f8f;
+            --teal-dark: #087b7b;
+            --teal-light: #eaf7f6;
+            --blue-light: #eef5fc;
+            --border: #d7e4e8;
+            --text: #16213a;
+            --muted: #526174;
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f8fbfc;
+            color: var(--text);
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+            line-height: 1.5;
+        }
+
+        .page {
+            position: relative;
+            max-width: 1500px;
+            margin: 0 auto;
+            padding: 52px 42px 55px;
+            background: var(--white);
+            overflow: hidden;
+        }
+
+        /* Decorative top-right shapes */
+        .shape-top {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 330px;
+            height: 155px;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .shape-top .navy {
+            position: absolute;
+            width: 230px;
+            height: 230px;
+            background: var(--navy);
+            right: -105px;
+            top: -155px;
+            transform: rotate(45deg);
+        }
+
+        .shape-top .teal {
+            position: absolute;
+            width: 135px;
+            height: 135px;
+            background: var(--teal);
+            right: -67px;
+            top: -66px;
+            transform: rotate(45deg);
+        }
+
+        .shape-top .pale {
+            position: absolute;
+            width: 95px;
+            height: 95px;
+            background: #dcefee;
+            right: 3px;
+            top: 58px;
+            transform: rotate(45deg);
+        }
+
+        /* Header */
+        .header {
+            position: relative;
+            z-index: 1;
+            margin-bottom: 27px;
+            padding-left: 30px;
+        }
+
+        .header::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 2px;
+            width: 6px;
+            height: 90px;
+            border-radius: 2px;
+            background: var(--teal);
+        }
+
+        h1 {
+            margin: 0;
+            max-width: 850px;
+            color: var(--navy);
+            font-size: clamp(34px, 4vw, 56px);
+            line-height: 1.08;
+            font-weight: 750;
+            letter-spacing: -1.5px;
+        }
+
+        .heading-line {
+            width: 105px;
+            height: 4px;
+            margin-top: 20px;
+            background: var(--teal);
+            border-radius: 4px;
+        }
+
+        /* Intro */
+        .intro {
+            position: relative;
+            z-index: 1;
+            max-width: 1250px;
+            margin: 0 0 25px 30px;
+            font-size: 18px;
+            line-height: 1.65;
+            color: var(--text);
+        }
+
+        .intro strong {
+            color: var(--teal-dark);
+            font-weight: 700;
+        }
+
+        /* Table wrapper */
+        .table-container {
+            position: relative;
+            z-index: 1;
+            margin-top: 18px;
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            overflow: hidden;
+            background: var(--white);
+        }
+
+        .disclosure-table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+
+        .disclosure-table th {
+            padding: 15px 14px;
+            background: var(--navy);
+            color: var(--white);
+            font-size: 16px;
+            font-weight: 700;
+            text-align: left;
+            border-right: 1px solid rgba(255,255,255,0.25);
+            white-space: nowrap;
+        }
+
+        .disclosure-table th:last-child {
+            border-right: none;
+        }
+
+        .disclosure-table td {
+            padding: 10px 14px;
+            font-size: 15px;
+            line-height: 1.3;
+            border-right: 1px solid var(--border);
+            border-bottom: 1px dashed var(--border);
+            vertical-align: middle;
+            background: var(--white);
+        }
+
+        .disclosure-table tr:nth-child(even) td {
+            background: #f3faf9;
+        }
+
+        .disclosure-table td:last-child {
+            border-right: none;
+        }
+
+        .disclosure-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Column widths */
+        .col-number {
+            width: 7.5%;
+            text-align: center !important;
+        }
+
+        .col-principal {
+            width: 27%;
+        }
+
+        .col-registration {
+            width: 19%;
+            text-align: center;
+        }
+
+        .col-name {
+            width: 20%;
+        }
+
+        .col-capacity {
+            width: 26.5%;
+        }
+
+        /* Footer */
+        .footer-notice {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            gap: 17px;
+            margin-top: 25px;
+            padding: 18px 24px;
+            border: 1px solid #d7e8e9;
+            border-radius: 14px;
+            background: linear-gradient(
+                90deg,
+                #edf8f7 0%,
+                #f5fafb 100%
+            );
+        }
+
+        .info-icon {
+            flex: 0 0 42px;
+            width: 42px;
+            height: 42px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: var(--teal);
+            color: var(--white);
+            font-size: 25px;
+            font-weight: 700;
+        }
+
+        .footer-text {
+            font-size: 15px;
+            line-height: 1.55;
+            color: var(--text);
+        }
+
+        .last-updated {
+            margin-top: 2px;
+            font-weight: 700;
+            color: var(--teal-dark);
+        }
+
+        /* Decorative bottom-right shapes */
+        .shape-bottom {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 210px;
+            height: 120px;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .shape-bottom .navy {
+            position: absolute;
+            width: 145px;
+            height: 145px;
+            right: -65px;
+            bottom: -88px;
+            background: var(--navy);
+            transform: rotate(45deg);
+        }
+
+        .shape-bottom .teal {
+            position: absolute;
+            width: 90px;
+            height: 90px;
+            right: 18px;
+            bottom: -50px;
+            background: var(--teal);
+            transform: rotate(45deg);
+        }
+
+        /* Tablet */
+        @media (max-width: 1000px) {
+            .page {
+                padding: 40px 25px 45px;
+            }
+
+            .header {
+                padding-left: 25px;
+            }
+
+            .header::before {
+                height: 76px;
+            }
+
+            .intro {
+                margin-left: 25px;
+                font-size: 16px;
+            }
+
+            .disclosure-table th,
+            .disclosure-table td {
+                font-size: 13px;
+                padding: 9px 9px;
+            }
+
+            .col-principal {
+                width: 26%;
+            }
+
+            .col-registration {
+                width: 18%;
+            }
+
+            .col-name {
+                width: 20%;
+            }
+
+            .col-capacity {
+                width: 28.5%;
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 700px) {
+            .page {
+                padding: 30px 14px 35px;
+            }
+
+            .shape-top,
+            .shape-bottom {
+                opacity: 0.7;
+            }
+
+            .header {
+                padding-left: 18px;
+                margin-bottom: 22px;
+            }
+
+            .header::before {
+                width: 4px;
+                height: 62px;
+            }
+
+            h1 {
+                font-size: 32px;
+                letter-spacing: -0.8px;
+            }
+
+            .heading-line {
+                width: 75px;
+                height: 3px;
+                margin-top: 15px;
+            }
+
+            .intro {
+                margin-left: 18px;
+                margin-right: 8px;
+                font-size: 15px;
+                line-height: 1.55;
+            }
+
+            /* Horizontal scrolling table on mobile */
+            .table-container {
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .disclosure-table {
+                min-width: 1000px;
+                table-layout: fixed;
+            }
+
+            .disclosure-table th {
+                font-size: 14px;
+            }
+
+            .disclosure-table td {
+                font-size: 14px;
+            }
+
+            .footer-notice {
+                align-items: flex-start;
+                padding: 16px;
+                gap: 12px;
+            }
+
+            .info-icon {
+                flex-basis: 36px;
+                width: 36px;
+                height: 36px;
+                font-size: 21px;
+            }
+
+            .footer-text {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="page">
+
+    <!-- Decorative top-right graphic -->
+    <div class="shape-top" aria-hidden="true">
+        <div class="navy"></div>
+        <div class="teal"></div>
+        <div class="pale"></div>
+    </div>
+
+    <!-- Page Header -->
+    <header class="header">
+        <h1>SEBI Registered Principal Entity Disclosure</h1>
+        <div class="heading-line"></div>
+    </header>
+
+    <!-- Introductory Statement -->
+    <div class="intro">
+        In accordance with SEBI Circular No.
+        HO/(79)2026-MIRSD-PODMMC dated February 26, 2026,
+        the following are the SEBI registered principal entities
+        with which the undersigned is associated as an AMFI
+        Registered Mutual Fund Distributor.
+        <strong>
+            The registered name and ARN of the undersigned are also
+            provided along with the registered name and registration
+            number of each principal entity.
+        </strong>
+    </div>
+
+    <!-- Disclosure Table -->
+    <div class="table-container">
+
+        <table class="disclosure-table">
+
+            <thead>
+                <tr>
+                    <th class="col-number">Sr. No.</th>
+                    <th class="col-principal">Principal Entity</th>
+                    <th class="col-registration">Registration Number</th>
+                    <th class="col-name">Registered Name</th>
+                    <th class="col-capacity">Registered As</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td class="col-number">1</td>
+                    <td>Abakkus Mutual Fund</td>
+                    <td class="col-registration">MF/088/25/14</td>
+                    <td>Amiya Ranjan Kumar</td>
+                    <td>AMFI Registered Mutual Fund Distributor – ARN 106678</td>
+                </tr>
+
+                <tr>
+                    <td class="col-number">2</td>
+                    <td>Aditya Birla Sun Life Mutual Fund</td>
+                    <td class="col-registration">MF/020/94/8</td>
+                    <td>Amiya Ranjan Kumar</td>
+                    <td>AMFI Registered Mutual Fund Distributor – ARN 106678</td>
+                </tr>
+
+                <tr>
+                    <td class="col-number">3</td>
+                    <td>Axis Mutual Fund</td>
+                    <td class="col-registration">MF/061/09/02</td>
+                    <td>Amiya Ranjan Kumar</td>
+                    <td>AMFI Registered Mutual Fund Distributor – ARN 106678</td>
+                </tr>
+
+                <tr>
+                    <td class="col-number">4</td>
+                    <td>Bandhan Mutual Fund</td>
+                    <td class="col-registration">MF/042/00/3</td>
+                    <td>Amiya Ranjan Kumar</td>
+                    <td>AMFI Registered Mutual Fund Distributor – ARN 106678</td>
+                </tr>
+
+                <tr>
+                    <td class="col-number">5</td>
+                    <td>Baroda BNP Paribas Mutual Fund</td>
+                    <td class="col-registration">MF/018/94/2</td>
+                    <td>Amiya Ranjan Kumar</td>
+                    <td>AMFI Registered Mutual Fund Distributor – ARN 106678</td>
+                </tr>
+
+                <tr>
+                    <td class="col-number">6</td>
+                    <td>Canara Robeco Mutual Fund</td>
+                    <td class="col-registration">MF/004/93/4</td>
+                    <td>Amiya Ranjan Kumar</td>
+                    <td>AMFI Registered Mutual Fund Distributor – ARN 106678</td>
+                </tr>
+
+                <tr>
+                    <td class="col-number">7</td>
+                    <td>DSP Mutual Fund</td>
+                    <td class="col-registration">MF/036/97/7</td>
+                    <td>Amiya Ranjan Kumar</td>
+                    <td>AMFI Registered Mutual Fund Distributor – ARN 106678</td>
+                </tr>
+
+                <tr>
+                    <td class="col-number">8</td>
+                    <td>Franklin Templeton Mutual Fund</td>
+                    <td class="col-registration">MF/026/96/8</td>
+                    <td>Amiya Ranjan Kumar</td>
+                    <td>AMFI Registered Mutual Fund Distributor – ARN 106678</td>
+                </tr>
+
+                <tr>
+                    <td class="col-number">9</td>
+                    <td>HDFC Mutual Fund</td>
+                    <td class="col-registration">MF/044/00/6</td>
+                    <td>Amiya Ranjan Kumar</td>
+                    <td>AMFI Registered Mutual Fund Distributor – ARN 106678</td>
+                </tr>
+
+                <tr>
+                    <td class="col-number">10</td>
+                    <td>HSBC Mutual Fund</td>
+                    <td class="col-registration">MF/046/02/5</td>
+                    <td>Amiya Ranjan Kumar</td>
+                    <td>AMFI Registered Mutual Fund Distributor – ARN 106678</td>
+                </tr>
+
+                <tr>
+                    <td class="col-number">11</td>
+                    <td>ICICI Prudential Mutual Fund</td>
+                    <td class="col-registration">MF/003/93/6</td>
+                    <td>Amiya Ranjan Kumar</td>
+                    <td>AMFI Registered Mutual Fund Distributor – ARN 106678</td>
+                </tr>
+
+                <tr>
+                    <td class="col-number">12</td>
+                    <td>Invesco Mutual Fund</td>
+                    <td class="col-registration">MF/052/06/01</td>
+                    <td>Amiya Ranjan Kumar</td>
+                    <td>AMFI Registered Mutual Fund Distributor – ARN 106678</td>
+                </tr>
+
+                <tr>
+                    <td class="col-number">13</td>
+                    <td>JM Financial Mutual Fund</td>
+                    <td class="col-registration">MF/015/94/8</td>
+                    <td>Amiya Ranjan Kumar</td>
+                    <td>AMFI Registered Mutual Fund Distributor – ARN 106678</td>
+                </tr>
+
+                <tr>
+                    <td class="col-number">14</td>
+                    <td>Kotak Mutual Fund</td>
+                    <td class="col-registration">MF/038/98/1</td>
+                    <td>Amiya Ranjan Kumar</td>
+                    <td>AMFI Registered Mutual Fund Distributor – ARN 106678</td>
+                </tr>
+
+                <tr>
+                    <td class="col-number">15</td>
+                    <td>Mahindra Manulife Mutual Fund</td>
+                    <td class="col-registration">MF/069/16/01</td>
+                    <td>Amiya Ranjan Kumar</td>
+                    <td>AMFI Registered Mutual Fund Distributor – ARN 106678</td>
+                </tr>
+
+                <tr>
+                    <td class="col-number">16</td>
+                    <td>Mirae Asset Mutual Fund</td>
+                    <td class="col-registration">MF/055/07/03</td>
+                    <td>Amiya Ranjan Kumar</td>
+                    <td>AMFI Registered Mutual Fund Distributor – ARN 106678</td>
+                </tr>
+
+                <tr>
+                    <td class="col-number">17</td>
+                    <td>Motilal Oswal Mutual Fund</td>
+                    <td class="col-registration">MF/063/09/04</td>
+                    <td>Amiya Ranjan Kumar</td>
+                    <td>AMFI Registered Mutual Fund Distributor – ARN 106678</td>
+                </tr>
+
+                <tr>
+                    <td class="col-number">18</td>
+                    <td>Nippon India Mutual Fund</td>
+                    <td class="col-registration">MF/022/95/1</td>
+                    <td>Amiya Ranjan Kumar</td>
+                    <td>AMFI Registered Mutual Fund Distributor – ARN 106678</td>
+                </tr>
+
+                <tr>
+                    <td class="col-number">19</td>
+                    <td>PGIM India Mutual Fund</td>
+                    <td class="col-registration">MF/065/10/02</td>
+                    <td>Amiya Ranjan Kumar</td>
+                    <td>AMFI Registered Mutual Fund Distributor – ARN 106678</td>
+                </tr>
+
+                <tr>
+                    <td class="col-number">20</td>
+                    <td>PPFAS Mutual Fund</td>
+                    <td class="col-registration">MF/069/12/01</td>
+                    <td>Amiya Ranjan Kumar</td>
+                    <td>AMFI Registered Mutual Fund Distributor – ARN 106678</td>
+                </tr>
+
+                <tr>
+                    <td class="col-number">21</td>
+                    <td>Quant Mutual Fund</td>
+                    <td class="col-registration">MF/028/96/4</td>
+                    <td>Amiya Ranjan Kumar</td>
+                    <td>AMFI Registered Mutual Fund Distributor – ARN 106678</td>
+                </tr>
+
+                <tr>
+                    <td class="col-number">22</td>
+                    <td>Quantum Mutual Fund</td>
+                    <td class="col-registration">MF/051/05/02</td>
+                    <td>Amiya Ranjan Kumar</td>
+                    <td>AMFI Registered Mutual Fund Distributor – ARN 106678</td>
+                </tr>
+
+                <tr>
+                    <td class="col-number">23</td>
+                    <td>Samco Mutual Fund</td>
+                    <td class="col-registration">MF/077/21/03</td>
+                    <td>Amiya Ranjan Kumar</td>
+                    <td>AMFI Registered Mutual Fund Distributor – ARN 106678</td>
+                </tr>
+
+                <tr>
+                    <td class="col-number">24</td>
+                    <td>SBI Mutual Fund</td>
+                    <td class="col-registration">MF/009/93/3</td>
+                    <td>Amiya Ranjan Kumar</td>
+                    <td>AMFI Registered Mutual Fund Distributor – ARN 106678</td>
+                </tr>
+
+                <tr>
+                    <td class="col-number">25</td>
+                    <td>Shriram Mutual Fund</td>
+                    <td class="col-registration">MF/017/94/4</td>
+                    <td>Amiya Ranjan Kumar</td>
+                    <td>AMFI Registered Mutual Fund Distributor – ARN 106678</td>
+                </tr>
+
+                <tr>
+                    <td class="col-number">26</td>
+                    <td>Sundaram Mutual Fund</td>
+                    <td class="col-registration">MF/034/97/2</td>
+                    <td>Amiya Ranjan Kumar</td>
+                    <td>AMFI Registered Mutual Fund Distributor – ARN 106678</td>
+                </tr>
+
+                <tr>
+                    <td class="col-number">27</td>
+                    <td>Tata Mutual Fund</td>
+                    <td class="col-registration">MF/023/95/9</td>
+                    <td>Amiya Ranjan Kumar</td>
+                    <td>AMFI Registered Mutual Fund Distributor – ARN 106678</td>
+                </tr>
+
+                <tr>
+                    <td class="col-number">28</td>
+                    <td>The Wealth Company Mutual Fund</td>
+                    <td class="col-registration">MF/086/25/12</td>
+                    <td>Amiya Ranjan Kumar</td>
+                    <td>AMFI Registered Mutual Fund Distributor – ARN 106678</td>
+                </tr>
+
+                <tr>
+                    <td class="col-number">29</td>
+                    <td>Union Mutual Fund</td>
+                    <td class="col-registration">MF/066/11/01</td>
+                    <td>Amiya Ranjan Kumar</td>
+                    <td>AMFI Registered Mutual Fund Distributor – ARN 106678</td>
+                </tr>
+
+                <tr>
+                    <td class="col-number">30</td>
+                    <td>UTI Mutual Fund</td>
+                    <td class="col-registration">MF/048/03/01</td>
+                    <td>Amiya Ranjan Kumar</td>
+                    <td>AMFI Registered Mutual Fund Distributor – ARN 106678</td>
+                </tr>
+
+                <tr>
+                    <td class="col-number">31</td>
+                    <td>WhiteOak Capital Mutual Fund</td>
+                    <td class="col-registration">MF/074/18/02</td>
+                    <td>Amiya Ranjan Kumar</td>
+                    <td>AMFI Registered Mutual Fund Distributor – ARN 106678</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Footer Notice -->
+    <div class="footer-notice">
+
+        <div class="info-icon" aria-hidden="true">
+            i
+        </div>
+
+        <div class="footer-text">
+            This disclosure is provided pursuant to SEBI Circular No.
+            HO/(79)2026-MIRSD-PODMMC dated February 26, 2026.
+
+            <div class="last-updated">
+                Last Updated: 01-Sep-2026
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Decorative bottom-right graphic -->
+    <div class="shape-bottom" aria-hidden="true">
+        <div class="teal"></div>
+        <div class="navy"></div>
+    </div>
+
+</div>
+
+</body>
+</html>
